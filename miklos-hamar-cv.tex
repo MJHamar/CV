@@ -1,0 +1,226 @@
+%-------------------------
+% Resume in Latex
+% Author : Miklós Hamar
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-8pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Miklós Hamar} \\ \vspace{1pt}
+    \small Budapest, Hungary $|$ \href{mailto:hamiki987@gmail.com}{\underline{miklos.hamar@example.com}} $|$ 
+    \href{https://linkedin.com/in/miklos-hamar}{\underline{linkedin.com/in/miklos-hamar}} $|$
+    \href{https://github.com/MJHamar}{\underline{github.com/MJHamar}}
+\end{center}
+
+
+%-----------SUMMARY-----------
+\section{Summary}
+\small{AI R\&D Engineer with expertise in Reinforcement Learning, Information Retrieval, and ML frameworks. Recently completed MSc in Artificial Intelligence with first-ever open-source reproduction of AlphaDev. Published researcher with proven track record of developing production-grade AI solutions and bridging theory-to-practice gaps in complex engineering environments.}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Amsterdam}{Amsterdam, Netherlands}
+      {Master of Science in Artificial Intelligence}{Sep. 2023 -- Jul. 2025}
+      \resumeItemListStart
+        \resumeItem{Thesis: \textbf{AlphaDev-Open} -- First open-source, scalable reproduction of AlphaDev RL algorithm with parallel training pipelines}
+        \resumeItem{Coursework: Deep Learning, NLP, Computer Vision, Information Retrieval, Reinforcement Learning, Foundation Models}
+        \resumeItem{Research: Published in TMLR 2024 (explainable AI), paper under review at SIGIR 2025 (synthetic data generation)}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {University of Warwick}{Coventry, United Kingdom}
+      {Bachelor of Science in Computer Science}{Sep. 2019 -- Jul. 2022}
+      \resumeItemListStart
+        \resumeItem{Focus: Data Science, Artificial Intelligence, Computational Chemistry}
+        \resumeItem{Foundation in algorithms, formal languages, logic verification, and compiler design}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Full-Stack Software Developer Intern}{Aug. 2024 -- Present}
+      {ASML}{Veldhoven, Netherlands}
+      \resumeItemListStart
+        \resumeItem{Developed enterprise-scale workflow management application replacing legacy Excel-based processes for outsourcing team}
+        \resumeItem{Built end-to-end solution using Mendix platform and Azure cloud, handling front-end, back-end, and database design}
+        \resumeItem{Application serves 200+ employees daily with proven efficiency improvements and enhanced data integrity}
+        \resumeItem{Acted as primary technical liaison with stakeholders, translating requirements into actionable features with clear timelines}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Consultant Software Developer}{Aug. 2022 -- Sep. 2023}
+      {Sigma Technologies / Flex Ltd}{Budapest, Hungary}
+      \resumeItemListStart
+        \resumeItem{Led architecture and implementation of customized testing frameworks using Python and embedded C++}
+        \resumeItem{Developed automation solutions with high autonomy, streamlining processes across multiple engineering teams}
+        \resumeItem{Delivered end-to-end project ownership from requirements gathering to deployment and maintenance}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Key Projects \& Publications}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{AlphaDev-Open: Open-Source RL Reproduction} $|$ \emph{Python, JAX, Reinforcement Learning}}{2024 -- 2025}
+          \resumeItemListStart
+            \resumeItem{First open-source implementation of AlphaDev method with scalable, parallelizable training pipeline}
+            \resumeItem{Re-implemented Asynchronous Policy-Value Monte-Carlo Tree Search (APV-MCTS) algorithm from scratch}
+            \resumeItem{Achieved comparable parallelism levels to original DeepMind paper through efficient Python implementation}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{Explainable AI for Temporal Graphs} $|$ \emph{PyTorch, Graph Neural Networks}}{2024}
+          \resumeItemListStart
+            \resumeItem{Published in TMLR 2024 Reproducibility track: reproduced and extended Explorer-Navigator framework}
+            \resumeItem{Enhanced AI model transparency for safety-critical applications through improved explainability methods}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{Synthetic Data Generation for Information Retrieval} $|$ \emph{LLMs, Information Retrieval}}{2024}
+          \resumeItemListStart
+            \resumeItem{Extended LLM-based synthetic query generation pipeline, paper under review at SIGIR 2025}
+            \resumeItem{Achieved improved training data efficiency without human-annotated relevance judgments}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{AI-Assisted CV Scoring System} $|$ \emph{RAG, LLMs, Information Retrieval}}{2025}
+          \resumeItemListStart
+            \resumeItem{Developing orchestrated system of retrieval and language models for automated candidate matching}
+            \resumeItem{Implementing efficient document processing pipeline for large-scale CV databases}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{AI/ML Frameworks}{: PyTorch, TensorFlow, JAX, scikit-learn, DSPy, Hugging Face Transformers} \\
+     \textbf{Programming Languages}{: Python, C++, SQL, JavaScript, MATLAB} \\
+     \textbf{Specializations}{: Reinforcement Learning, Information Retrieval, Deep Learning, NLP, Computer Vision} \\
+     \textbf{Tools \& Platforms}{: Git, Docker, Azure Cloud, Mendix, Linux, Jupyter, MLflow} \\
+     \textbf{Research Skills}{: Academic writing, reproducible research, statistical analysis, experimental design}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
